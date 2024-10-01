@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(to right, #222, #555);
+    background-image: url(background.jpeg);
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #04AA6D;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* White keys */
+div:nth-of-type(1),
+:nth-of-type(3),
+:nth-of-type(5),
+:nth-of-type(7),
+:nth-of-type(8),
+:nth-of-type(10),
+:nth-of-type(12),
+:nth-of-type(13),
+:nth-of-type(15),
+:nth-of-type(17),
+:nth-of-type(19),
+:nth-of-type(20) {
+    /* margin-right: -30px; */
+    display: inline-flex;
+    transition: all 0.07s ease;
+    border: 2px solid #fff;
+    color: black;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90px;
+    height: 405px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    z-index: 0;
+}
+
+/* Black keys */
+div:nth-of-type(2),
+:nth-of-type(4),
+:nth-of-type(6),
+:nth-of-type(9),
+:nth-of-type(11),
+:nth-of-type(14),
+:nth-of-type(16),
+:nth-of-type(18) {
+    margin-left: -30px;
+    position: absolute;
+    top: 0;
+    display: inline-flex;
+    transition: all 0.07s ease;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 303.75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+.key.active {
+    transform: scale(0.96);
+    border-color: rgb(197, 197, 197);
+    background-color: rgb(197, 197, 197);
+    color: #d1d1d1;
+}

@@ -8,15 +8,17 @@ body {
     position: relative;
 }
 
-.songBtns{
+.songBtns {
     display: flex;
-    bottom: 0px;
     border: none;
-    background-color: rgb(0, 255, 255);
-    padding: 14px 28px;
+    background-color: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding-block-start: 50px;
     font-size: 55px;
     cursor: pointer;
-
 }
 
 /* White keys */
@@ -32,7 +34,6 @@ div:nth-of-type(1),
 :nth-of-type(17),
 :nth-of-type(19),
 :nth-of-type(20) {
-    /* margin-right: -30px; */
     display: inline-flex;
     transition: all 0.07s ease;
     border: 2px solid #fff;
@@ -87,6 +88,7 @@ div:nth-of-type(2),
 .slidecontainer {
     width: 100%;
     color: #fff;
+    padding-block-start: 80px;
 }
 
 .slider {

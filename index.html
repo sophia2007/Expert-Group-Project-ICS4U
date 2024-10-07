@@ -9,12 +9,13 @@
     <meta http-equiv='pragma' content='no-cache'>
 
     <link rel="stylesheet" href="style.css">
-    <title> Piano </title>
+    <title> Piano Keys </title>
 </head>
 
 <body>
-    <div class="key" data-key="Q">
-        <span>Q</span>
+    <!-- Piano Keys -->
+    <div class="key" data-key="Q"> 
+        <span>Q</span> 
         <audio id="Q" src="/audio/key01.mp3" data-key="Q"></audio>
     </div>
     <div class="key" data-key="2"><span>2</span><audio id="2" src="/audio/key02.mp3" data-key="2"></audio></div>
@@ -37,7 +38,7 @@
     <div class="key" data-key="["><span>[</span><audio id="[" src="/audio/key19.mp3" data-key="["></audio></div>
     <div class="key" data-key="]"><span>]</span><audio id="]" src="/audio/key20.mp3" data-key="]"></audio></div>
 
-    <!-- Slider -->
+    <!-- Slider (Metronome) -->
     <div class="slidecontainer">
         <input type="range" min="1" max="200" value="0" class="slider" id="myRange">
         <p>Value: <span id="value"></span> bpm</p>
@@ -49,9 +50,12 @@
         </label>
     </div>
 
-    <div class="songBtns">
-        <button type="button" id="song1">Moonlight Sonata</button>
-    </div>
+    <!-- Scales Buttons -->
+    <div class="songBtns"><button type="button" id="scale1">F Major</button></div>
+    <div class="songBtns"><button type="button" id="scale2">G Major</button></div>
+    <div class="songBtns"><button type="button" id="scale3">A Major</button></div>
+    <div class="songBtns"><button type="button" id="scale4">B Major</button></div>
+    <div class="songBtns"><button type="button" id="scale5">C Major</button></div>
 
     <script src="script.js"></script>
 </body>
